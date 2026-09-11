@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b2ghbeul5adf0"]
+
+[ext_resource type="PackedScene" uid="uid://b5g4h0d3pwdk5" path="res://goalposts1.tscn" id="1_0cutk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kq5xs"]
+albedo_color = Color(0.64401305, 1, 0.15667814, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rbnfp"]
+material = SubResource("StandardMaterial3D_kq5xs")
+size = Vector3(54.503708, 0.7607422, 21.7513)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jput1"]
+albedo_color = Color(0.48748595, 0.3161843, 0.09895133, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0cutk"]
+material = SubResource("StandardMaterial3D_jput1")
+size = Vector3(55.116966, 0.7607422, 21.902016)
+
+[node name="Node3D" type="Node3D" unique_id=303793042]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2118731571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.522526, 2.3081539, -2.0762515)
+mesh = SubResource("BoxMesh_rbnfp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1750118325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.179012, 1.8818183, -2.0269408)
+mesh = SubResource("BoxMesh_0cutk")
+
+[node name="Node3D" parent="." unique_id=1380591985 instance=ExtResource("1_0cutk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -292, 13, 9)
+
+[node name="Node3D2" parent="." unique_id=293433328 instance=ExtResource("1_0cutk")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -12.347577, 3.1413655, -1.3724573)
+
+[node name="Node3D3" parent="." unique_id=1681448351 instance=ExtResource("1_0cutk")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 31.22084, 3.4702063, -5.098366)

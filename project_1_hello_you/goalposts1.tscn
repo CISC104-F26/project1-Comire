@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b5g4h0d3pwdk5"]
+
+[ext_resource type="Material" uid="uid://uqh61praqf2q" path="res://post1.tres" id="1_wvfku"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kq5xs"]
+material = ExtResource("1_wvfku")
+size = Vector3(0.095214844, 1.7735138, 0.10308838)
+
+[sub_resource type="BoxMesh" id="BoxMesh_teknr"]
+material = ExtResource("1_wvfku")
+size = Vector3(0.095214844, 1.3252335, 0.10308838)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mj2ca"]
+material = ExtResource("1_wvfku")
+size = Vector3(0.095214844, 1.718544, 0.10308838)
+
+[node name="Node3D" type="Node3D" unique_id=1380591985]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1296167051]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9528551, 0.5933485, 0.5039138)
+mesh = SubResource("BoxMesh_kq5xs")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=702789379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9669764, 2.253024, -0.2552415)
+mesh = SubResource("BoxMesh_teknr")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1295309901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.98086965, 2.253024, 1.3325319)
+mesh = SubResource("BoxMesh_teknr")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1988018068]
+transform = Transform3D(0.9999964, -0.002594351, -0.0006971851, -0.0006779272, 0.0074132797, -0.9999724, 0.00259945, 0.99996924, 0.0074114935, 0.9759149, 1.5180922, 0.5420685)
+mesh = SubResource("BoxMesh_mj2ca")
