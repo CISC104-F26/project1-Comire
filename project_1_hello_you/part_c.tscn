@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://c2lgg2dly1ay"]
 
+[ext_resource type="Texture2D" uid="uid://be47nsvg0v2i1" path="res://icon.svg" id="1_3seef"]
+[ext_resource type="Texture2D" uid="uid://vqhy1k4b5yds" path="res://download.png" id="2_3seef"]
+
 [node name="Part_C" type="Control" unique_id=1842323565]
 layout_mode = 3
 anchors_preset = 15
@@ -12,9 +15,19 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 1159.0
 offset_bottom = 650.0
-theme_override_font_sizes/normal_font_size = 20
-text = "Add more labels, images, and other Control nodes to this scene to build your personal poster for Part C.
-
-Remember that you may need to scroll down to \"Theme Overrides > Font Sizes\" in the Inspector 
-to make your labels big enough to read. (This is font size 20px, for reference)."
+theme_override_font_sizes/normal_font_size = 40
+text = "Austin Comire
+Fun Fact: I am a chicago bears fan.
+This scene is of me throwing a football down a field.
+"
 vertical_alignment = 1
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1371707168]
+position = Vector2(133, 557)
+scale = Vector2(1.609375, 1.578125)
+texture = ExtResource("1_3seef")
+
+[node name="Download" type="Sprite2D" parent="." unique_id=225134369]
+position = Vector2(391.00003, 564)
+scale = Vector2(1.176923, 1.3513514)
+texture = ExtResource("2_3seef")
