@@ -14,8 +14,14 @@ sky_material = SubResource("ProceduralSkyMaterial_6e7u2")
 background_mode = 2
 sky = SubResource("Sky_ujqnb")
 
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_ltxep"]
+speed_scale = 3.7
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kq5xs"]
 albedo_color = Color(0.64401305, 1, 0.15667814, 1)
+metallic = 1.0
+metallic_specular = 0.48
+metallic_texture = SubResource("AnimatedTexture_ltxep")
 
 [sub_resource type="BoxMesh" id="BoxMesh_rbnfp"]
 material = SubResource("StandardMaterial3D_kq5xs")
@@ -26,7 +32,7 @@ albedo_color = Color(0.48748595, 0.3161843, 0.09895133, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_0cutk"]
 material = SubResource("StandardMaterial3D_jput1")
-size = Vector3(55.116966, 0.7607422, 21.902016)
+size = Vector3(54.579967, 0.7607422, 21.902016)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cutk"]
 albedo_color = Color(0.2322227, 0.12378711, 4.813075e-08, 1)
@@ -82,7 +88,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.522526, 2.3081539, -2.0762
 mesh = SubResource("BoxMesh_rbnfp")
 
 [node name="dirt" type="MeshInstance3D" parent="." unique_id=1750118325]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.179012, 1.8818183, -2.0269408)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.447512, 1.8818183, -2.0269408)
 mesh = SubResource("BoxMesh_0cutk")
 
 [node name="Node3D" parent="." unique_id=1380591985 instance=ExtResource("1_0cutk")]
